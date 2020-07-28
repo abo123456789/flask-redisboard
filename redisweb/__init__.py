@@ -4,8 +4,11 @@ from .redisboard import module
 
 
 class RedisBoardExtension:
-    def __init__(self, app=None):
+    def __init__(self, app=None, redis_host='localhost', redis_port=6379, redis_password=None):
         self.app = app
+        self.redis_host = redis_host
+        self.redis_port = redis_port
+        self.redis_password = redis_password
 
         if app is not None:
             self.init_app(app)
@@ -24,9 +27,9 @@ class RedisBoardExtension:
 
     def _default_config(self):
         return {
-            "REDIS_HOST": "localhost",
-            "REDIS_PORT": 6379,
-            "REDIS_PASSWORD": None,
+            "REDIS_HOST": self.redis_host,
+            "REDIS_PORT": self.redis_port,
+            "REDIS_PASSWORD": self.redis_password,
             "REDIS_UNIX_SOCKET_PATH": None,
             "REDISBOARD_SOCKET_TIMEOUT": None,
             "REDISBOARD_SOCKET_CONNECT_TIMEOUT": None,

@@ -1,4 +1,4 @@
 
 include LICENSE
-recursive-include flask_redisboard/templates *.html
-recursive-include flask_redisboard/static *
+recursive-include redisweb/templates *.html
+recursive-include redisweb/static *

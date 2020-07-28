@@ -1,4 +1,4 @@
-# flask-redisboard
+# redisweb
 
 A flask extension to support user view and manage redis with beautiful interface.
 
@@ -7,35 +7,15 @@ A flask extension to support user view and manage redis with beautiful interface
 
 Installation is easy:
 ```
-$ pip install flask-redisboard
+$ pip install redisweb
 ```
 
-Initialize the extension:
+Start Server:
 ```
-from flask_redisboard import RedisBoardExtension
-...
-board = RedisBoardExtension(app)
+>>>redisweb
 ```
 
-Also support for factory pattern:
-```
-from flask_redisboard import RedisBoardExtension
-from flask import Flask
-board = RedisBoardExtension()
-
-
-def create_app():
-    app = Flask(__name__)
-    app.config['SECRET_KEY'] = '123456'
-    board.init_app(app)
-    app.run()
-
-
-if __name__ == '__main__':
-    create_app()
-```
-
-Now, you can go to 127.0.0.1:5000/redisboard 
+Now, you can go to http://127.0.0.1:5000/redisboard 
 
 
 ## Preview
