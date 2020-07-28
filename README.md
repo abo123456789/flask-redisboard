@@ -25,31 +25,5 @@ Now, you can go to http://127.0.0.1:5000/redisboard
 
 
 ## Preview
-
-<table align="center">
-    <tr>
-        <td align="center">
-            <a href="https://github.com/abo123456789/redisweb/tree/master/screenshot/demo1.png">
-                <img src="https://github.com/abo123456789/redisweb/tree/master/screenshot/demo1.png" alt="Screenshot Dashboard" width="480px" />
-            </a>
-        </td>
-        <td align="center">
-            <a href="https://github.com/abo123456789/redisweb/tree/master/screenshot/demo2.png">
-                <img src="https://github.com/abo123456789/redisweb/tree/master/screenshot/demo2.png" alt="Screenshot Database" width="480px" />
-            </a>
-        </td>
-    </tr>
-    <tr>
-        <td align="center">
-            <a href="https://github.com/abo123456789/redisweb/tree/master/screenshot/demo3.png">
-                <img src="https://github.com/abo123456789/redisweb/tree/master/screenshot/demo3.png" alt="Screenshot Command" width="480px" />
-            </a>
-        </td>
-        <td align="center">
-            <a href="https://github.com/abo123456789/redisweb/tree/master/screenshot/demo4.png">
-                <img src="https://github.com/abo123456789/redisweb/tree/master/screenshot/demo4.png" alt="Screenshot ServerInfo" width="480px" />
-            </a>
-        </td>
-    </tr>
-</table>
+![avatar](https://s1.ax1x.com/2020/07/07/UAIHFe.jpg)
 
