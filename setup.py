@@ -10,7 +10,7 @@ from setuptools import setup
 
 setup(
     name="redisweb",
-    version="1.0.5",
+    version="1.0.6",
     url="https://github.com/abo123456789/flask-redisboard",
     license="MIT",
     author="hjlarry",
