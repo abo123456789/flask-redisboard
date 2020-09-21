@@ -12,15 +12,16 @@ def create_app():
     host = 'localhost'
     port = 6379
     password = None
-    if len(sys.argv) >= 4:
+    if len(sys.argv) == 3:
+        host = sys.argv[1]
+        port = sys.argv[2]
+    if len(sys.argv) > 3:
         host = sys.argv[1]
         port = sys.argv[2]
         password = sys.argv[3]
-
-    board = RedisBoardExtension(redis_host=host, redis_port=port, redis_password=password)
     app = Flask(__name__)
     app.config['SECRET_KEY'] = '123456'
-    board.init_app(app)
+    RedisBoardExtension(app=app, redis_host=host, redis_port=port, redis_password=password)
     app.run()
 
 

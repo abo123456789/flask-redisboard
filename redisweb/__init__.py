@@ -9,14 +9,13 @@ class RedisBoardExtension:
         self.redis_host = redis_host
         self.redis_port = redis_port
         self.redis_password = redis_password
-
         if app is not None:
             self.init_app(app)
 
     def init_app(self, app):
         for k, v in self._default_config().items():
             app.config.setdefault(k, v)
-
+        app.config['SECRET_KEY'] = '123456'
         if not app.config.get("SECRET_KEY"):
             raise RuntimeError(
                 "The Flask-RedisBoard requires the 'SECRET_KEY' config var to be set"
